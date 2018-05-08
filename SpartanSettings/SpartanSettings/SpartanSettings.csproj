@@ -9,6 +9,10 @@
     <PackageTags>spartan app settings application settings</PackageTags>
     <Description>Cross-plaform base framework for basic application settings.</Description>
     <PackageReleaseNotes>Cross-plaform base framework for basic application settings.</PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/carlosap/content/master/images/spartan_32x32.png</PackageIconUrl>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
   </PropertyGroup>
 
 </Project>
