@@ -19,8 +19,7 @@ namespace SpartanSettings
         /// </summary>
         public Setting()
         {
-            _userProfile = GetFolderPath(SpecialFolder.UserProfile);
-            AppFolder = Path.Combine(_userProfile, ".spartan");
+            AppFolder = GetAppFolder();
             if (!Directory.Exists(AppFolder))
             {
                 Directory.CreateDirectory(AppFolder);
@@ -59,6 +58,18 @@ namespace SpartanSettings
             {
                 Directory.CreateDirectory(retVal);
             }
+            return retVal;
+        }
+
+        /// <summary>
+        /// returns userprofile application folder
+        /// </summary>
+        /// <returns>applicaiton folder userprofile/.spartan</returns>
+        public string GetAppFolder()
+        {
+            var retVal = string.Empty;
+            _userProfile = GetFolderPath(SpecialFolder.UserProfile);
+            retVal = Path.Combine(_userProfile, ".spartan");
             return retVal;
         }
     }
